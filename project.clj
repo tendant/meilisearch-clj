@@ -1,4 +1,4 @@
-(defproject tendant/meilisearch-clj "0.1.0"
+(defproject tendant/meilisearch-clj "0.2.0"
   :description "FIXME: write description"
   :url "https://github.com/tendant/meilisearch-clj"
   :license {:name "Eclipse Public License"
@@ -17,7 +17,6 @@
                   ["change" "version" "leiningen.release/bump-version"]
                   ["change" "version" "leiningen.release/bump-version" "release"]
                   ["changelog" "release"]
-                  ["update-readme-version"]
                   ["vcs" "commit"]
                   ["vcs" "tag"]
                   ["deploy"]
