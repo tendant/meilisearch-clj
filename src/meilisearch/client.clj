@@ -1,9 +1,10 @@
 (ns meilisearch.client
   (:require [clj-http.client :as http]
-            [cheshire.core :as json])
+            [cheshire.core :as json]
+            [config.core :as config])
   (:import [java.net ConnectException]))
 
-(def server-url "http://localhost:7700")
+(def server-url (:meilisearch-url config/env "http://localhost:7700"))
 
 (defn- api-call [uri params]
   (let [endpoint (format "%s/%s" server-url uri)]

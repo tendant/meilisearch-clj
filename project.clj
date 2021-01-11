@@ -4,7 +4,8 @@
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[clj-http "3.11.0"]
-                 [cheshire "5.10.0"]]
+                 [cheshire "5.10.0"]
+                 [yogthos/config "1.1.7"]]
   :plugins [[lein-cloverage "1.0.13"]
             [lein-shell "0.5.0"]
             [lein-ancient "0.6.15"]
