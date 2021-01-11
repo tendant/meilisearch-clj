@@ -1,9 +1,10 @@
-(defproject tendant/meilisearch-clj "0.0.0"
+(defproject tendant/meilisearch-clj "0.0.1"
   :description "FIXME: write description"
   :url "https://github.com/tendant/meilisearch-clj"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies []
+  :dependencies [[clj-http "3.11.0"]
+                 [cheshire "5.10.0"]]
   :plugins [[lein-cloverage "1.0.13"]
             [lein-shell "0.5.0"]
             [lein-ancient "0.6.15"]
