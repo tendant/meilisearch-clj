@@ -6,7 +6,7 @@
 A Clojure library designed to ... well, that part is up to you.
 
 ```clj
-[tendant/meilisearch-clj "0.0.0"]
+[tendant/meilisearch-clj "0.0.1"]
 ```
 
 ## Usage
