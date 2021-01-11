@@ -1,6 +1,7 @@
 (ns meilisearch.client
   (:require [clj-http.client :as http]
-            [cheshire.core :as json]))
+            [cheshire.core :as json])
+  (:import [java.net ConnectException]))
 
 (def server-url "http://localhost:7700")
 
@@ -9,7 +10,9 @@
     (http/post endpoint
                {:body (json/generate-string params)
                 :content-type :json
-                :as :json})))
+                :as :json
+                :throw-exceptions true
+                :ignore-unknown-host false})))
 
 (defn create-index
   "uid is case insensistive, prefer lower case."
@@ -22,7 +25,7 @@
 
 (defn search-documents
   "Check https://docs.meilisearch.com/references/search.html#body
-   for search params.
+   for search params detail.
 
   {:q \"sample query term\"
    :offset 0
