@@ -1,4 +1,4 @@
-(defproject tendant/meilisearch-clj "0.2.1"
+(defproject tendant/meilisearch-clj "0.2.2"
   :description "FIXME: write description"
   :url "https://github.com/tendant/meilisearch-clj"
   :license {:name "Eclipse Public License"
