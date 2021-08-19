@@ -27,6 +27,10 @@
   (let [uri (format "indexes/%s/documents" uid)]
     (api-call uri docs)))
 
+(defn delete-documents [uid docs]
+  (let [uri (format "indexes/%s/documents/delete-batch" uid)]
+    (api-call uri docs)))
+
 (defn search-documents
   "Check https://docs.meilisearch.com/references/search.html#body
    for search params detail.
