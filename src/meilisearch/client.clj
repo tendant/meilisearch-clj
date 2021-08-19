@@ -13,7 +13,10 @@
                 :content-type :json
                 :as :json
                 :throw-exceptions true
-                :ignore-unknown-host false})))
+                :ignore-unknown-host false
+                ;; ignore index not found
+                :unexceptional-status #(or (<= 200 % 299)
+                                           (= % 404))})))
 
 (defn create-index
   "uid is case insensistive, prefer lower case."
